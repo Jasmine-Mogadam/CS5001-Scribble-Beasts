@@ -15,3 +15,17 @@ Scribble beasts is a web game that has players collaboratively create beasts out
 8. The game ends, announcing the winners, and the host can replay it.
 ### Implementation
 Since these games will have a ton of events firing asynchronously, the server and client will use websockets to easily identify which player is doing what and how to handle it while in rooms. Even before they are in a room, the server can field user requests to join and create rooms via websockets. Once a player joins a room, their websocket can be put inside it on the server-side.
+### Tools
+#### Frontend
+- Svelte
+- Flowbite
+- Canvas API
+- Typescript
+#### Backend
+- Node.js
+- ws
+- Typescript
+#### Routing
+- Ngnix
+- Docker
+- Release Share
