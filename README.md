@@ -117,7 +117,7 @@ To configure automatic formatting on save, add this to your VS Code settings:
 2. Install all dependencies (client and server):
 
    ```bash
-   npm install
+   npm setup
    ```
 
    This will install dependencies for both the client and server automatically using the workspace configuration.
@@ -126,14 +126,14 @@ To configure automatic formatting on save, add this to your VS Code settings:
 
 #### Port Configuration
 
-Duplicate `.env.sample` as `.env` and modify the ports to your heart's content.
+Duplicate `.env.sample` as `.env` and modify the ports to your heart's content. If you change the nginx port, links to the frontend and backend will change accordingly.
 
 ### Running the Project
 
 1. Start all services using Docker Compose:
 
    ```bash
-   docker-compose up --build
+   npm run dev
    ```
 
 2. Access the application:
@@ -152,3 +152,14 @@ Duplicate `.env.sample` as `.env` and modify the ports to your heart's content.
 - The client and server directories are mounted as volumes, so changes will be reflected immediately without rebuilding the containers
 - Use `docker-compose up --build` when you modify the Dockerfile or add new dependencies
 - Check container logs using `docker-compose logs -f [service_name]`
+
+## Production
+
+For playtests, we will use the production build and share it via the Release Share docker desktop plugin.
+
+To generate the production build, run:
+
+```bash
+npm run down
+npm run prod
+```
