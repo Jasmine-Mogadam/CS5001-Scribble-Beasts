@@ -5,6 +5,7 @@ CS5001: Senior Design Project
 ## Members
 
 [Jasmine Mogadam](documents/biographies/jasmine-mogadam-bio.md) - Computer Science Major ( mogadajh@mail.uc.edu )
+
 [Ana Cedillo](documents/biographies/ana-cedillo-bio.md) - Computer Science Major ( cedillak@mail.uc.edu )
 
 ## Topic Area
