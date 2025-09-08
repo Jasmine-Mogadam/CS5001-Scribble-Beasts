@@ -23,3 +23,4 @@ This project will recreate the physical gameplay in the form of a jackbox-esc pa
 ## Approval
 
 Jasmine Mogadam \***\*approves\*\*** of this Team Contract
+Ana Cedillo \***\*approves\*\*** of this Team Contract
