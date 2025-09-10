@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   client:
@@ -6,7 +6,7 @@ services:
       target: production
     environment:
       - NODE_ENV=production
-    command: ['nginx', '-g', 'daemon off;']
+    command: ["nginx", "-g", "daemon off;"]
 
   server:
     build:
@@ -14,4 +14,4 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=5001
-    command: ['npm', 'start']
+    command: ["npm", "start"]

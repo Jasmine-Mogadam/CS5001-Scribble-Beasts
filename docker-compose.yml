@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   nginx:
@@ -6,10 +6,12 @@ services:
     ports:
       - ${NGINX_PORT}:${NGINX_PORT}
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/templates:/etc/nginx/templates:ro
     depends_on:
       - client
       - server
+    env_file:
+      - .env
 
   client:
     build:
@@ -22,6 +24,8 @@ services:
       - PORT=${CLIENT_PORT}
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
+    env_file:
+      - .env
 
   server:
     build:
@@ -34,3 +38,5 @@ services:
       - PORT=${SERVER_PORT}
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
+    env_file:
+      - .env
