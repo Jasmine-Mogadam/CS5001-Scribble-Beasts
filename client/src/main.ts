@@ -1,7 +1,10 @@
 import App from './App.svelte'
+import { mount } from 'svelte'
 
-const app = new App({
-    target: document.getElementById('app') as HTMLElement,
-})
+const target = document.getElementById('app')
+if (!target) {
+    throw new Error('Could not find app element')
+}
 
-export default app
+// @ts-ignore - Svelte 5 types are still in development
+mount(App, { target })

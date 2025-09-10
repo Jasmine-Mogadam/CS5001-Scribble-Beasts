@@ -1,5 +1,5 @@
 import express from 'express';
-import WebSocket, { WebSocketServer } from 'ws';
+import { WebSocket, WebSocketServer } from 'ws';
 
 const app = express();
 if (!process.env.SERVER_PORT) {
