@@ -20,7 +20,6 @@ services:
       - /app/node_modules
     environment:
       - PORT=${CLIENT_PORT}
-      - VITE_NGINX_PORT=${NGINX_PORT}
     ports:
       - ${CLIENT_PORT}:${CLIENT_PORT}
     env_file:

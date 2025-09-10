@@ -18,6 +18,5 @@ export default defineConfig({
             host: 'localhost',
             port: Number(process.env.CLIENT_PORT) || 3000,
         },
-    },
-    envPrefix: 'VITE_',
+    }
 })

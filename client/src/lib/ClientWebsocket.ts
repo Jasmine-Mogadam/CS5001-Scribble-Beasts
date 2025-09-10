@@ -1,6 +1,4 @@
 
-/// <reference types="vite/client" />
-
 class CWebsocket {
     #ws: WebSocket;
 
